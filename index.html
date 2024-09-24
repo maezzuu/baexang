@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAEXANG</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/icon" href="img/browser_icon.png">
+
+    <!-- Swiper JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+
+
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="로고"></a></h1>
+            <a href="#" class="btn"><img src="img/ico-header-menu.png" alt="카테고리"></a>
+
+            <div class="gnb_left">
+                <ul>
+                    <li><a href="sub01_best.html">best</a></li>
+                    <li><a href="sub02_new.html">신상품</a></li>
+                    <li><a href="sub03_paint.html">사진작품</a></li>
+                    <li><a href="sub04_art.html">그림작품</a></li>
+                    <li><a href="sub05_artist.html">작가별</a></li>
+                    <li><a href="sub06_genre.html">장르별</a></li>
+                    <li><a href="sub07_subject.html">주제별</a></li>
+                </ul>
+            </div>
+            <div class="gnb_right">
+                <ul>
+                    <li><a href="sub08_login.html">로그인</a></li>
+                    <li><a href="sub09_join.html">회원가입</a></li>
+                    <li><a href="sub08_login.html">주문조회</a></li>
+                    <li><a href="sub10_order.html">장바구니 <span>0</span></a></li>
+                    <li><a href="intro.html">회사소개</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <a href="#" title="search"><img src="img/ico-header-search.png" alt=""></a>
+            </div>
+            <div class="sear">
+                <div class="search_slide">
+                    <div class="full_search">
+                        <input type="search" placeholder="Search...">
+                        <div class="search_icon">
+                            <a href="#"><img src="img/ico-header-search-big.png" alt=""></a>
+                        </div>
+                        <div class="search_ke">
+                            <div class="search_left">
+                                <h2>최근검색어</h2>
+                                <ul class="search_name">
+                                    <li><a href="#">#클로드 모네<span>2022.03.14</span></a></li>
+                                    <li><a href="#">#빈센트 반 고흐<span>2022.03.14</span></a></li>
+                                    <li><a href="#">#정원의 여인들<span>2022.03.14</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="search_right">
+                                <h2>인기검색어</h2>
+                                <ul class="search_name">
+                                    <li><a href="#">#클로드 모네</a></li>
+                                    <li><a href="#">#정원의 여인들</a></li>
+                                    <li><a href="#">#빈센트 반 고흐</a></li>
+                                    <li><a href="#">#해바라기</a></li>
+                                    <li><a href="#">#폴 고갱</a></li>
+                                    <li><a href="#">#생 라자르 역</a></li>
+                                    <li><a href="#">#황색의 그리스도</a></li>
+                                    <li><a href="#">#파블로 피카소</a></li>
+                                    <li><a href="#">#아비뇽의 아가씨들</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn_close btn_search_close"><img src="img/ico-header-search-close.png"
+                            alt=""></a>
+                </div>
+            </div>
+        </header>
+        <aside class="btn_slide">
+            <h1 class="aside_logo"><img src="img/logo_white.png" alt="로고"></h1>
+            <ul class="dep1">
+                <li class="dep1_gnb"><a href="#">Product</a>
+                    <ul class="dep2">
+                        <li><a href="sub01_best.html">베스트</a></li>
+                        <li><a href="sub02_new.html">신상품</a></li>
+                        <li><a href="sub03_paint.html">사진작품</a></li>
+                        <li><a href="sub04_art.html">그림작품</a></li>
+                        <li><a href="sub05_artist.html">작가별</a></li>
+                        <li><a href="sub06_genre.html">장르별</a></li>
+                        <li><a href="sub07_subject.html">주제별</a></li>
+                    </ul>
+                </li>
+                <li class="dep1_gnb"><a href="#">About Baexang</a>
+                    <ul class="dep2">
+                        <li><a href="intro.html">회사소개</a></li>
+                        <li><a href="intro.html">갤러리</a></li>
+                    </ul>
+                </li>
+                <li class="dep1_gnb"><a href="#">Community</a>
+                    <ul class="dep2">
+                        <li><a href="intro.html">공지사항</a></li>
+                        <li><a href="intro.html">이벤트</a></li>
+
+                    </ul>
+                </li>
+                <li class="dep1_gnb"><a href="#">Service</a>
+                    <ul class="dep2">
+                        <li><a href="intro.html">제휴협찬문의</a></li>
+                        <li><a href="intro.html">FAQ</a></li>
+                        <li><a href="intro.html">1:1문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="aside_foot">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">개인결제창</a></li>
+                </ul>
+            </div>
+            <a href="#" class="btn_close"><img src="img/ico-header-search-close-white.png" alt=""></a>
+        </aside>
+
+        <!-- header -->
+
+
+
+        <main>
+            <div class="swiper main_img">
+                <div class="swiper-wrapper">
+                    <!--slide에 클래스추가 img background 처리해주기-->
+                    <div class="swiper-slide main01">
+                        <!--scale주기 위해 추가해주기-->
+                        <div class="scale_bg_wrap">
+                            <div class="scale_bg"></div>
+                        </div>
+                        <div class="visual_text">
+                            <p>Baexang Gallery</p>
+                            <span>Grand open</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main02">
+                        <!--scale주기 위해 추가해주기-->
+                        <div class="scale_bg_wrap">
+                            <div class="scale_bg"></div>
+                        </div>
+                        <div class="visual_text">
+                            <p>Baexang Gallery</p>
+                            <span>Grand open</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main03">
+                        <!--scale주기 위해 추가해주기-->
+                        <div class="scale_bg_wrap">
+                            <div class="scale_bg"></div>
+                        </div>
+                        <div class="visual_text">
+                            <p>Baexang Gallery</p>
+                            <span>Grand open</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main -->
+
+            <section id="cont_best" data-aos="fade-up">
+                <div class="title">
+                    <p>백상에서 가장 인기있는 작품을 소개합니다.</p>
+                    <h1>BEST ART</h1>
+                    <p class="mouse_text">마우스를 옆으로 슬라이드 해주세요.</p>
+                </div>
+
+                <div class="swiper best_img">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"> <!-- 베스트이미지1 -->
+                            <div class="new_best_img">
+                                <div class="best_img_box">
+                                    <img src="img/best_art01.jpg" alt="">
+                                    <div class="best_imghover">
+                                        <a href="item.html" class="best_link">
+                                            <span>Read More</span>
+                                        </a>
+                                        <figure>
+                                            <button><img src="img/ico-sight.png" class="img01" alt=""></button>
+                                            <button onclick="bestClick()"><img src="img/ico-like.png" class="img02"
+                                                    alt=""></button>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="best_text">
+                                    <p class="main_title">아를의 랑그루아 다리</p>
+                                    <p class="sub_title">
+                                    <p class="artist_name">빈센트 반 고흐</p>
+                                    <p class="art_size">30.0cm x 30.0cm</p>
+                                    <p class="price">38,200<span>원</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide"> <!-- 베스트이미지2 -->
+                            <div class="new_best_img">
+                                <div class="best_img_box">
+                                    <img src="img/best_art02.jpg" alt="">
+                                    <div class="best_imghover">
+                                        <a href="item.html" class="best_link">
+                                            <span>Read More</span>
+                                        </a>
+                                        <figure>
+                                            <button><img src="img/ico-sight.png" class="img01" alt=""></button>
+                                            <button onclick="bestClick()"><img src="img/ico-like.png" class="img02"
+                                                    alt=""></button>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="best_text">
+                                    <p class="main_title">키스</p>
+                                    <p class="sub_title">
+                                    <p class="artist_name">구스타프 클림트</p>
+                                    <p class="art_size">30.0cm x 30.0cm</p>
+                                    <p class="price">36,500<span>원</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide"> <!-- 베스트이미지3 -->
+                            <div class="new_best_img">
+                                <div class="best_img_box">
+                                    <img src="img/best_art03.png" alt="">
+                                    <div class="best_imghover">
+                                        <a href="item.html" class="best_link">
+                                            <span>Read More</span>
+                                        </a>
+                                        <figure>
+                                            <button><img src="img/ico-sight.png" class="img01" alt=""></button>
+                                            <button onclick="bestClick()"><img src="img/ico-like.png" class="img02"
+                                                    alt=""></button>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="best_text">
+                                    <p class="main_title">앙티브의 아침</p>
+                                    <p class="sub_title">
+                                    <p class="artist_name">클로드 모네</p>
+                                    <p class="art_size">30.0cm x 30.0cm</p>
+                                    <p class="price">35,700<span>원</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide"> <!-- 베스트이미지4 -->
+                            <div class="new_best_img">
+                                <div class="best_img_box">
+                                    <img src="img/best_art04.png" alt="">
+                                    <div class="best_imghover">
+                                        <a href="item.html" class="best_link">
+                                            <span>Read More</span>
+                                        </a>
+                                        <figure>
+                                            <button><img src="img/ico-sight.png" class="img01" alt=""></button>
+                                            <button onclick="bestClick()"><img src="img/ico-like.png" class="img02"
+                                                    alt=""></button>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="best_text">
+                                    <p class="main_title">아티제 호수</p>
+                                    <p class="sub_title">
+                                    <p class="artist_name">구스타프 클림트</p>
+                                    <p class="art_size">30.0cm x 30.0cm</p>
+                                    <p class="price">42,400<span>원</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide"> <!-- 베스트이미지5 -->
+                            <div class="new_best_img">
+                                <div class="best_img_box">
+                                    <img src="img/best_art05.png" alt="">
+                                    <div class="best_imghover">
+                                        <a href="#" class="best_link">
+                                            <span>Read More</span>
+                                        </a>
+                                        <figure>
+                                            <button><img src="img/ico-sight.png" class="img01" alt=""></button>
+                                            <button onclick="bestClick()"><img src="img/ico-like.png" class="img02"
+                                                    alt=""></button>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="best_text">
+                                    <p class="main_title">지베르니 봄의 효과</p>
+                                    <p class="sub_title">
+                                    <p class="artist_name">클로드 모네</p>
+                                    <p class="art_size">30.0cm x 30.0cm</p>
+                                    <p class="price">36,500<span>원</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!-- cont_best -->
+
+            <section id="md_pick" data-aos="fade-up">
+                <div class="title">
+                    <p>백상 큐레이터가 선정한 추천 작품을 만나보세요.</p>
+                    <h1>MD PICK</h1>
+                </div>
+                <div class="md_01"> <!-- md픽이미지1 -->
+                    <div class="md_category">
+                        <h2>그림작품을 소개 해드립니다.</h2>
+                    </div>
+                    <div class="md_cont01">
+                        <div class="md_img">
+                            <img src="img/md_01.png" alt="">
+                        </div>
+                        <div class="best_text1">
+                            <div class="best_text2">
+                                <p class="artist_name">구스타프 클림트</p>
+                                <p class="art_name">산지기의 집</p>
+                                <p class="sub_text">구스타프 클림트의 산지기의 집(House in the garden)입니다. 구스타프 클림트는 오스트리아의 화가. 아르누보
+                                    계열의 장식적인 양식을 선호하며 전통적인 미술에 대항해 ‘빈 분리파’를 결성했다. 관능적인 여성 이미지와 찬란한 황금빛, 화려한 색채를 특징으로 하고
+                                    성(性)과 사랑, 죽음에 대한 알레고리로 많은 사람들을 매혹시켰다.</p>
+                                <div class="link">
+                                    <a href="item.html">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md_02"> <!-- md픽이미지2 -->
+                    <div class="md_category">
+                        <h2>사진작품을 소개 해드립니다.</h2>
+                    </div>
+                    <div class="md_cont01">
+                        <div class="md_img">
+                            <img src="img/md_02.jpg" alt="">
+                        </div>
+                        <div class="best_text1">
+                            <div class="best_text2">
+                                <p class="artist_name">구스타프 클림트</p>
+                                <p class="art_name">산지기의 집</p>
+                                <p class="sub_text">구스타프 클림트의 산지기의 집(House in the garden)입니다. 구스타프 클림트는 오스트리아의 화가. 아르누보
+                                    계열의 장식적인 양식을 선호하며 전통적인 미술에 대항해 ‘빈 분리파’를 결성했다. 관능적인 여성 이미지와 찬란한 황금빛, 화려한 색채를 특징으로 하고
+                                    성(性)과 사랑, 죽음에 대한 알레고리로 많은 사람들을 매혹시켰다.</p>
+                                <div class="link">
+                                    <a href="item.html">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md_03"> <!-- md픽이미지3 -->
+                    <div class="md_cont01">
+                        <div class="md_img">
+                            <img src="img/md_01.png" alt="">
+                        </div>
+                        <div class="best_text1">
+                            <div class="best_text2">
+                                <p class="artist_name">구스타프 클림트</p>
+                                <p class="art_name">산지기의 집</p>
+                                <p class="sub_text">구스타프 클림트의 산지기의 집(House in the garden)입니다. 구스타프 클림트는 오스트리아의 화가. 아르누보
+                                    계열의 장식적인 양식을 선호하며 전통적인 미술에 대항해 ‘빈 분리파’를 결성했다. 관능적인 여성 이미지와 찬란한 황금빛, 화려한 색채를 특징으로 하고
+                                    성(性)과 사랑, 죽음에 대한 알레고리로 많은 사람들을 매혹시켰다.</p>
+                                <div class="link">
+                                    <a href="item.html">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- md_pick -->
+
+            <section id="new_art" data-aos="fade-up">
+                <div class="title">
+                    <p>백상과 함께하는 새로운 작품을 소개합니다.</p>
+                    <h1>NEW ART</h1>
+                    <p class="mouse_text">마우스를 옆으로 슬라이드 해주세요.</p>
+                </div>
+                <div class="swiper newart">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"> <!-- newart이미지1 -->
+                            <figure>
+                                <img src="img/new_art01.jpg" class="new_img" alt="">
+                            </figure>
+                            <div class="best_text">
+                                <div class="sub_title1">
+                                    <div class="sub_title2">
+                                        <p class="artist_name">피에르 보나르</p>
+                                        <p class="main_title">베르농의 테라스</p>
+                                    </div>
+                                </div>
+                                <p class="sub_text">강렬한 색채와 평면성이 강조된 뚜렷한 윤곽선, 평평한 색면 추구에 열정을 쏟았던 '나비파'의 유산을 느낄 수 있다.</p>
+                                <a href="item.html">
+                                    Read More
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"> <!-- newart이미지2 -->
+                            <figure>
+                                <img src="img/new_art02.jpg" alt="">
+                            </figure>
+                            <div class="best_text">
+                                <div class="sub_title1">
+                                    <div class="sub_title2">
+                                        <p class="artist_name">빈센트 반 고흐</p>
+                                        <p class="main_title">밤의 프로방스 시골길</p>
+                                    </div>
+                                </div>
+                                <p class="sub_text">1889년 5월부터 1890년 5월 생레미에서 머문 기간 동안의 작품들은 반 고흐 특유의 소용돌이치며 꿈틀대는 선들로
+                                    가득했다. 이 시기 반 고흐의 마음을 사로잡은 소재는 사이프러스 나무였다.</p>
+                                <a href="item.html">
+                                    Read More
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"> <!-- newart이미지3 -->
+                            <figure>
+                                <img src="img/new_art03.jpg" alt="">
+                            </figure>
+                            <div class="best_text">
+                                <div class="sub_title1">
+                                    <div class="sub_title2">
+                                        <p class="artist_name">클로드 모네</p>
+                                        <p class="main_title">양산을 든 여인 - 카미유와 장</p>
+                                    </div>
+                                </div>
+                                <p class="sub_text">마네의 도움으로 1871년 모네는 아르장퇴유에 거처를 마련하였다. 양산을 든 여인(1875)는 1875년 여름에서
+                                    1876년 사이에 그린 일련의 작품 시리즈 가운데 하나이다. 이때 그린 시리즈물의 풍경은 파리 외곽인 아르장퇴유의 두 번째 집 주위의 정원을 묘사하고
+                                    있다.</p>
+                                <a href="item.html">
+                                    Read More
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"> <!-- newart이미지4 -->
+                            <figure>
+                                <img src="img/new_art04.png" alt="">
+                            </figure>
+                            <div class="best_text">
+                                <div class="sub_title1">
+                                    <div class="sub_title2">
+                                        <p class="artist_name">구스타프 클림트</p>
+                                        <p class="main_title">헤르미네 갈리아의 초상</p>
+                                    </div>
+                                </div>
+                                <p class="sub_text">강렬한 색채와 평면성이 강조된 뚜렷한 윤곽선, 평평한 색면 추구에 열정을 쏟았던 '나비파'의 유산을 느낄 수 있다.
+                                </p>
+                                <a href="item.html">
+                                    Read More
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"> <!-- newart이미지5 -->
+                            <figure>
+                                <img src="img/new_art05.png" alt="">
+                            </figure>
+                            <div class="best_text">
+                                <div class="sub_title1">
+                                    <div class="sub_title2">
+                                        <p class="artist_name">빈센트 반 고흐</p>
+                                        <p class="main_title">지베르니 봄의 효과</p>
+                                    </div>
+                                </div>
+                                <p class="sub_text">1889년 5월부터 1890년 5월 생레미에서 머문 기간 동안의 작품들은 반 고흐 특유의 소용돌이치며 꿈틀대는 선들로
+                                    가득했다. 이 시기 반 고흐의 마음을 사로잡은 소재는 사이프러스 나무였다.</p>
+                                <a href="item.html">
+                                    Read More
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- new_art -->
+
+            <section id="gallery" data-aos="fade-up">
+                <div class="gallery_box">
+                    <div class="gallery_text">
+                        <h1 class="gallery_title">BAEXANG GALLERY</h1>
+                        <P>백상 갤러리에서 다양한 그림을 직접 감상하시고 구입하세요.</P>
+                        <div class="link">
+                            <a href="item.html">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- gallery -->
+
+            <section id="review" data-aos="fade-up">
+                <div class="title">
+                    <p>백상의 작품을 이용하는 고객들의 실제 후기입니다.</p>
+                    <h1>REVIEW</h1>
+                    <p class="mouse_text">마우스를 옆으로 슬라이드 해주세요.</p>
+                </div>
+                <div class="swiper review">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide"> <!-- 리뷰이미지1 -->
+                            <a href="" class="review_01">
+                                <img src="img/review_01.png" alt="">
+                                <span>01<br>JUN</span>
+                            </a>
+                            <div class="best_text">
+                                <p class="artist_name">아티제 호수<br>구스타프클림트</p>
+                                <p class="sub_text">
+                                    배송 포장 모두 만족합니다.
+                                    그림 퀄리티는 말할 것도 없고, 색상도 선명하고 무광이라 반사도 적은 것 같아요.
+                                    선물 이후에 너무 좋아하셔서 보러갔는데 믿고 살만하네요~
+                                </p>
+                            </div>
+                            <a href="" class="review_link">
+                                <span>Read More</span>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide"> <!-- 리뷰이미지2 -->
+                            <a href="" class="review_01">
+                                <img src="img/review_02.jpg" alt="">
+                                <span>01<br>JUN</span>
+                            </a>
+                            <div class="best_text">
+                                <p class="artist_name">키스<br>구스타프클림트</p>
+                                <p class="sub_text">
+                                    생각했던 것보다 약간 어두운느낌은 있지만, 식탁 옆 벽에 거니까 크기도 적당하고
+                                    퀄리티도 아주 좋습니다. 백상에서 다른그림으로 하나 더 구매하려고 해요.
+                                    배송 빠르게 잘 왔습니다. 감사합니다.
+                            </div>
+                            <a href="" class="review_link">
+                                <span>Read More</span>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide"> <!-- 리뷰이미지3 -->
+                            <a href="" class="review_01">
+                                <img src="img/review_03.jpg" alt="">
+                                <span>01<br>JUN</span>
+                            </a>
+                            <div class="best_text">
+                                <p class="artist_name">꽃 피는 아몬드 나무<br>빈센트 반 고흐</p>
+                                <p class="sub_text">
+                                    그림이 깔끔하고 가볍고 좋아요.
+                                    이사하고 집이 너무 휑한거같아서 이번 기회에 작품 하나 샀는데 그림 하나로
+                                    분위기가 너무 달라졌어요.
+                                    배송도 빠르고 너무 감사합니다.
+                                </p>
+                            </div>
+                            <a href="" class="review_link">
+                                <span>Read More</span>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide"> <!-- 리뷰이미지4 -->
+                            <a href="" class="review_01">
+                                <img src="img/best_art04.png" alt="">
+                                <span>01<br>JUN</span>
+                            </a>
+                            <div class="best_text">
+                                <p class="artist_name">아티제 호수<br>구스타프클림트</p>
+                                <p class="sub_text">
+                                    배송 포장 모두 만족합니다.
+                                    그림 퀄리티는 말할 것도 없고, 색상도 선명하고 무광이라 반사도 적은 것 같아요.
+                                    선물 이후에 너무 좋아하셔서 보러갔는데 믿고 살만하네요~
+                                </p>
+                            </div>
+                            <a href="" class="review_link">
+                                <span>Read More</span>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide"> <!-- 리뷰이미지5-->
+                            <a href="" class="review_01">
+                                <img src="img/best_art05.png" alt="">
+                                <span>01<br>JUN</span>
+                            </a>
+                            <div class="best_text">
+                                <p class="artist_name">아티제 호수<br>구스타프클림트</p>
+                                <p class="sub_text">
+                                    배송 포장 모두 만족합니다.
+                                    그림 퀄리티는 말할 것도 없고, 색상도 선명하고 무광이라 반사도 적은 것 같아요.
+                                    선물 이후에 너무 좋아하셔서 보러갔는데 믿고 살만하네요~
+                                </p>
+                            </div>
+                            <a href="" class="review_link">
+                                <span>Read More</span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer_top">
+                <p>개인정보처리방침</p>
+                <p>이용약관</p>
+                <p>회사소개</p>
+            </div>
+            <div class="footer_mid">
+                <p class="middle01">
+                    <span>대표자:권순상</span>
+                    <span>사업자 등록번호:137-81-30071</span>
+                </p>
+                <p class="middle02">
+                    <span>주소:경기도 고양시 일산동구 산황로 178-15</span>
+                    <span>EMAIL:gbaexang@gmail.com</span>
+                    <span>TEL:031-954-9541</span>
+                    <span>FAX:031-977-9540</span>
+                </p>
+                <p class="middle03">
+                    <span class="num1">BAEXANG</span>
+                    <span class="num2">GALLERY</span>
+                </p>
+            </div>
+            <div class="footer_bot">
+                Copyright © 2022 Baexang Gallery. All rights reserved.
+            </div>
+        </footer>
+        <div id="totop" class="iconbutton">▲</div>
+    </div>
+
+    <script>
+        AOS.init({ duration: 1000 })
+        $(function () {
+            $('.btn').on('click', function () {
+                $('.btn_slide').animate({ left: 0 }, 800);
+            });
+
+            $('.btn_close').on('click', function () {
+                $('.btn_slide').animate({ left: '-100%' }, 1400);
+            });
+
+            // 오른쪽 어사이드 검색창
+            $('.search').on('click', function () {
+                $('.search_slide').animate({ right: 0 }, 1200);
+            });
+
+            $('.btn_search_close').on('click', function () {
+                $('.search_slide').animate({ right: '-250%' }, 1200);
+            });
+
+            //오른쪽 어사이드 dep1에 마우스 hover시 dep2생성
+
+            let dep1Gnb = document.querySelector('.dep1_gnb');
+
+            dep1Gnb.addEventListener('mouseclick', function () {
+                dep1Gnb.classList.add('on');
+            });
+
+            dep1Gnb.addEventListener('mouseleave', function () {
+                dep1Gnb.classList.remove('on');
+            });
+        });
+
+
+    </script>
+    <script src="js/baexang_index.js"></script>
+    <script src="js/baexang_art.js"></script>
+</body>
+
+</html>

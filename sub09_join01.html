@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAEXANG</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/icon" href="img/browser_icon.png">
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+
+
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="로고"></a></h1>
+            <a href="#" class="btn"><img src="img/ico-header-menu.png" alt="카테고리"></a>
+
+            <div class="gnb_left">
+                <ul>
+                    <li><a href="sub01_best.html">베스트</a></li>
+                    <li><a href="sub02_new.html">신상품</a></li>
+                    <li><a href="sub03_paint.html">사진작품</a></li>
+                    <li><a href="sub04_art.html">그림작품</a></li>
+                    <li><a href="sub05_artist.html">작가별</a></li>
+                    <li><a href="sub06_genre.html">장르별</a></li>
+                    <li><a href="sub07_subject.html">주제별</a></li>
+                </ul>
+            </div>
+            <div class="gnb_right">
+                <ul>
+                    <li><a href="sub08_login.html">로그인</a></li>
+                    <li><a href="sub09_join.html">회원가입</a></li>
+                    <li><a href="sub08_login.html">주문조회</a></li>
+                    <li><a href="sub10_order.html">장바구니 <span>0</span></a></li>
+                    <li><a href="intro.html">회사소개</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <a href="#" title="search"><img src="img/ico-header-search.png" alt=""></a>
+            </div>
+            <div class="sear">
+                <div class="search_slide">
+                    <div class="full_search">
+                        <input type="search" placeholder="Search...">
+                        <div class="search_icon">
+                            <a href="#"><img src="img/ico-header-search-big.png" alt=""></a>
+                        </div>
+                        <div class="search_ke">
+                            <div class="search_left">
+                                <h2>최근검색어</h2>
+                                <ul class="search_name">
+                                    <li><a href="#">#클로드 모네<span>2022.03.14</span></a></li>
+                                    <li><a href="#">#빈센트 반 고흐<span>2022.03.14</span></a></li>
+                                    <li><a href="#">#정원의 여인들<span>2022.03.14</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="search_right">
+                                <h2>인기검색어</h2>
+                                <ul class="search_name">
+                                    <li><a href="#">#클로드 모네</a></li>
+                                    <li><a href="#">#정원의 여인들</a></li>
+                                    <li><a href="#">#빈센트 반 고흐</a></li>
+                                    <li><a href="#">#해바라기</a></li>
+                                    <li><a href="#">#폴 고갱</a></li>
+                                    <li><a href="#">#생 라자르 역</a></li>
+                                    <li><a href="#">#황색의 그리스도</a></li>
+                                    <li><a href="#">#파블로 피카소</a></li>
+                                    <li><a href="#">#아비뇽의 아가씨들</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn_close btn_search_close"><img src="img/ico-header-search-close.png"
+                            alt=""></a>
+                </div>
+            </div>
+        </header>
+        <aside class="btn_slide">
+            <h1 class="aside_logo"><img src="img/logo_white.png" alt="로고"></h1>
+            <ul class="dep1">
+                <li class="dep1_gnb"><a href="#">Product</a>
+                    <ul class="dep2">
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">신상품</a></li>
+                        <li><a href="#">사진작품</a></li>
+                        <li><a href="#">그림작품</a></li>
+                        <li><a href="#">작가별</a></li>
+                        <li><a href="#">장르별</a></li>
+                        <li><a href="#">주제별</a></li>
+                    </ul>
+                </li>
+                <li class="dep1_gnb"><a href="#">About Baexang</a>
+                    <ul class="dep2">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">갤러리</a></li>
+                    </ul>
+                </li>
+                <li class="dep1_gnb"><a href="#">Community</a>
+                    <ul class="dep2">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이벤트</a></li>
+        
+                    </ul>
+                </li>
+                <li class="dep1_gnb"><a href="#">Service</a>
+                    <ul class="dep2">
+                        <li><a href="#">제휴협찬문의</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">1:1문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="aside_foot">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">개인결제창</a></li>
+                </ul>
+            </div>
+            <a href="#" class="btn_close"><img src="img/ico-header-search-close-white.png" alt=""></a>
+        </aside>
+
+        <!-- header -->
+
+        <main>
+            <div id="cont_best">
+                <div class="title">
+                    <div class="join_form01">
+                        <h1>Join</h1>
+                        <ul>
+                            <li class="on">약관동의</li>
+                            <li><img src="img/arrow_right.png" alt=""></li>
+                            <li>정보입력</li>
+                            <li><img src="img/arrow_right.png" alt=""></li>
+                            <li>가입완료</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="join_agree">
+                <label class="checkbox_label">
+                    <input type="checkbox" id="checkAll">
+                    <span class="checkbox_icon"></span>
+                    <span class="blind">체크</span>
+                </label>
+                <strong>전체동의</strong>
+                <span> 백상쇼핑몰의 모든 약관을 확인하고 전체 동의합니다.</span>
+            </div>
+            <div class="join_form02">
+                <label class="checkbox_label">
+                    <input type="checkbox" class="agree_checkbox">
+                    <span class="checkbox_icon"></span>
+                    <span class="blind">체크</span>
+                </label>
+                <span>사이트이용약관<strong>(필수)</strong></span>
+                <div class="site_box">
+                    <p>전자상거래(인터넷사이버몰) 표준약관</p>
+                    <p class='join_title'>표준약관 제10023호 (2015. 6. 26. 개정)<br>
+                    제1조(목적)</p>
+                    <p>이 약관은 주식회사 백상 회사(전자상거래 사업자)가 운영하는 백상 갤러리(이하 “몰”이라 한다)에서 제공하는 인터넷 관련 서비스(이하 “서비스”라 한다)를 이용함에 있어
+                        사이버
+                        몰과 이용자의 권리․의무 및 책임사항을 규정함을 목적으로 합니다.
+                        ※「PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다.」</p>
+
+                    <p class='join_title'>제2조(정의)
+                        ① “몰”이란 백상 회사가 재화 또는 용역(이하 “재화 등”이라 함)을 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 재화 등을 거래할 수 있도록 설정한
+                        가상의
+                        영업장을 말하며, 아울러 사이버몰을 운영하는 사업자의 의미로도 사용합니다.
+                        ② “이용자”란 “몰”에 접속하여 이 약관에 따라 “몰”이 제공하는 서비스를 받는 회원 및 비회원을 말합니다.
+                        ③ ‘회원’이라 함은 “몰”에 회원등록을 한 자로서, 계속적으로 “몰”이 제공하는 서비스를 이용할 수 있는 자를 말합니다.
+                        ④ ‘비회원’이라 함은 회원에 가입하지 않고 “몰”이 제공하는 서비스를 이용하는 자를 말합니다.</p>
+
+                    <p class='join_title'>제3조 (약관 등의 명시와 설명 및 개정)
+                        ① “몰”은 이 약관의 내용과 상호 및 대표자 성명, 영업소 소재지 주소(소비자의 불만을 처리할 수 있는 곳의 주소를 포함), 전화번호․모사전송번호․전자우편주소,
+                        사업자등록번호,
+                        통신판매업 신고번호, 개인정보관리책임자등을 이용자가 쉽게 알 수 있도록 00 사이버몰의 초기 서비스화면(전면)에 게시합니다. 다만, 약관의 내용은 이용자가 연결화면을 통하여
+                        볼 수
+                        있도록 할 수 있습니다.
+                        ② “몰은 이용자가 약관에 동의하기에 앞서 약관에 정하여져 있는 내용 중 청약철회․배송책임․환불조건 등과 같은 중요한 내용을 이용자가 이해할 수 있도록 별도의 연결화면 또는
+                        팝업화면 등을 제공하여 이용자의 확인을 구하여야 합니다.
+                        ③ “몰”은 「전자상거래 등에서의 소비자보호에 관한 법률」, 「약관의 규제에 관한 법률」, 「전자문서 및 전자거래기본법」, 「전자금융거래법」, 「전자서명법」, 「정보통신망
+                        이용촉진
+                        및 정보보호 등에 관한 법률」, 「방문판매 등에 관한 법률」, 「소비자기본법」 등 관련 법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.
+                        ④ “몰”이 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행약관과 함께 몰의 초기화면에 그 적용일자 7일 이전부터 적용일자 전일까지 공지합니다. 다만,
+                        이용자에게
+                        불리하게 약관내용을 변경하는 경우에는 최소한 30일 이상의 사전 유예기간을 두고 공지합니다. 이 경우 "몰“은 개정 전 내용과 개정 후 내용을 명확하게 비교하여 이용자가
+                        알기
+                        쉽도록 표시합니다.
+                        ⑤ “몰”이 약관을 개정할 경우에는 그 개정약관은 그 적용일자 이후에 체결되는 계약에만 적용되고 그 이전에 이미 체결된 계약에 대해서는 개정 전의 약관조항이 그대로
+                        적용됩니다.
+                        다만 이미 계약을 체결한 이용자가 개정약관 조항의 적용을 받기를 원하는 뜻을 제3항에 의한 개정약관의 공지기간 내에 “몰”에 송신하여 “몰”의 동의를 받은 경우에는 개정약관
+                        조항이
+                        적용됩니다.
+                        ⑥ 이 약관에서 정하지 아니한 사항과 이 약관의 해석에 관하여는 전자상거래 등에서의 소비자보호에 관한 법률, 약관의 규제 등에 관한 법률, 공정거래위원회가 정하는 전자상거래
+                        등에서의 소비자 보호지침 및 관계법령 또는 상관례에 따릅니다.</p>
+                </div>
+            </div>
+            <div class="join_form02">
+                <label class="checkbox_label">
+                    <input type="checkbox" class="agree_checkbox">
+                    <span class="checkbox_icon"></span>
+                    <span class="blind">체크</span>
+                </label>
+                <span>사이트이용약관<strong>(필수)</strong></span>
+                <div class="site_box">
+                    <p class='join_title'>
+                        개인정보의 처리 목적</p>
+                    <p>
+                        &lt;백상 갤러리&gt;( 이하 ‘백상’) 은(는) 다음의 목적을 위하여 개인정보를 처리하고 있으며, 다음의 목적 이외의 용도로는 이용하지 않습니다.<br>
+                            - 고객 가입의사 확인, 고객에 대한 서비스 제공에 따른 본인식별/인증, 회원자격 유지/관리, 물품 또는 서비스 공급에 따른 금액결제, 물품 또는 서비스의 공급/배송
+                            등
+                    </p>
+                    <p class='join_title'>1. 개인정보의 처리 및 보유 기간
+                        ① ‘백상’은(는) 정보주체로부터 개인정보를 수집할 때 동의 받은 개인정보 보유/이용기간 또는 법령에 따른 개인정보 보유/이용기간 내에서 개인정보를 처리/보유합니다.
+                        ② 구체적인 개인정보 처리 및 보유 기간은 다음과 같습니다.
+                        ☞ 아래 예시를 참고하여 개인정보 처리업무와 개인정보 처리업무에 대한 보유기간 및 관련 법령, 근거 등을 기재합니다.
+                        [예시]
+                        - 고객 가입 및 관리 : 서비스 이용계약 또는 회원가입 해지시까지, 다만 채권/채무관계 잔존시에는 해당 채권/채무관계 정산시까지
+                        전자상거래에서의 계약/청약철회, 대금결제, 재화 등 공급기록 : 5년</p>
+
+                    <p class='join_title'>2. 개인정보의 제3자 제공에 관한 사항
+                        ① ‘백상’은(는) 정보주체의 동의, 법률의 특별한 규정 등 개인정보 보호법 제17조 및 제18조에 해당하는 경우에만 개인정보를 제3자에게 제공합니다.
+                        ② ‘백상’은(는) 다음과 같이 개인정보를 제3자에게 제공하고 있습니다.
+                        &lt;백상 갤러리&gt;
+                            - 개인정보를 제공받는 자 : 백상
+                            - 제공받는 자의 개인정보 이용목적 : 이름, 이메일, 핸드폰번호, 생년월일, 주소
+                            - 제공받는 자의 보유/이용기간: 3년
+                    </p>
+
+                    <p class='join_title'>1. 개인정보의 처리 및 보유 기간
+                        ① ‘백상’은(는) 정보주체로부터 개인정보를 수집할 때 동의 받은 개인정보 보유/이용기간 또는 법령에 따른 개인정보 보유/이용기간 내에서 개인정보를 처리/보유합니다.
+                        ② 구체적인 개인정보 처리 및 보유 기간은 다음과 같습니다.
+                        ☞ 아래 예시를 참고하여 개인정보 처리업무와 개인정보 처리업무에 대한 보유기간 및 관련 법령, 근거 등을 기재합니다.
+                        [예시]
+                        - 고객 가입 및 관리 : 서비스 이용계약 또는 회원가입 해지시까지, 다만 채권/채무관계 잔존시에는 해당 채권/채무관계 정산시까지
+                        전자상거래에서의 계약/청약철회, 대금결제, 재화 등 공급기록 : 5년</p>
+
+                    <p class='join_title'>2. 개인정보의 제3자 제공에 관한 사항
+                        ① ‘백상’은(는) 정보주체의 동의, 법률의 특별한 규정 등 개인정보 보호법 제17조 및 제18조에 해당하는 경우에만 개인정보를 제3자에게 제공합니다.
+                        ② ‘백상’은(는) 다음과 같이 개인정보를 제3자에게 제공하고 있습니다.
+                        &lt;백상 갤러리&gt;
+                            - 개인정보를 제공받는 자 : 백상
+                            - 제공받는 자의 개인정보 이용목적 : 이름, 이메일, 핸드폰번호, 생년월일, 주소
+                            - 제공받는 자의 보유/이용기간: 3년
+                    </p>
+                </div>
+            </div>
+            <div class="join_intro">
+                <a href="sub09_join02.html">다음 단계</a>
+            </div>
+        </main>
+        <footer>
+            <div class="footer_top">
+                <p>개인정보처리방침</p>
+                <p>이용약관</p>
+                <p>회사소개</p>
+            </div>
+            <div class="footer_mid">
+                <p class="middle01">
+                    <span>대표자:권순상</span>
+                    <span>사업자 등록번호:137-81-30071</span>
+                </p>
+                <p class="middle02">
+                    <span>주소:경기도 고양시 일산동구 산황로 178-15</span>
+                    <span>EMAIL:gbaexang@gmail.com</span>
+                    <span>TEL:031-954-9541</span>
+                    <span>FAX:031-977-9540</span>
+                </p>
+                <p class="middle03">
+                    <span class="num1">BAEXANG</span>
+                    <span class="num2">GALLERY</span>
+                </p>
+            </div>
+            <div class="footer_bot">
+                Copyright © 2022 Baexang Gallery. All rights reserved.
+            </div>
+        </footer>
+        <div id="totop" class="iconbutton">▲</div>
+    </div>
+    <script>
+        $(function () {
+            $('.btn').on('click', function () {
+                $('.btn_slide').animate({ left: 0 }, 800);
+            });
+
+            $('.btn_close').on('click', function () {
+                $('.btn_slide').animate({ left: '-100%' }, 1400);
+            });
+
+            // 오른쪽 어사이드 검색창
+            $('.search').on('click', function () {
+                $('.search_slide').animate({ right: 0 }, 1200);
+            });
+
+            $('.btn_search_close').on('click', function () {
+                $('.search_slide').animate({ right: '-250%' }, 1200);
+            });
+
+            //오른쪽 어사이드 dep1에 마우스 hover시 dep2생성
+
+            let dep1Gnb = document.querySelector('.dep1_gnb');
+
+            dep1Gnb.addEventListener('mouseover', function () {
+                dep1Gnb.classList.add('on');
+            });
+
+            dep1Gnb.addEventListener('mouseleave', function () {
+                dep1Gnb.classList.remove('on');
+            });
+        });
+
+        //전체동의 체크박스 클릭시 모든 체크받스 활성화
+        document.querySelector('#checkAll').addEventListener('click', function () {
+            const checkboxes = document.querySelectorAll("input[type='checkbox']");
+            checkboxes.forEach(function (checkbox) {
+                checkbox.checked = true;
+            });
+        });
+
+    </script>
+    <script src="js/baexang_art.js"></script>
+</body>
+
+</html>

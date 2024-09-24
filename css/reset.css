@@ -1,0 +1,65 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+/* reset - 브라우저에서 잡고있는 기본 style을 모두 초기화 */
+html, body, h1, h2, h3, h4, h5, h6, div, p, ul, ol, li, dl, dt, dd, address, blockquote, header, main, section, article, aside, figure, figcaption, nav, footer, table, caption, tr, th, td, thead, tbody, tfoot, form, fieldset, legend {margin: 0; padding: 0;}
+
+header, main, section, article, aside, figure, figcaption, nav, footer {
+    display: block; 
+}/* html5에 새로 들어온 태그, 전버전에서 블럭으로 인식을 못하여 블럭으로 속성을 변경해줌*/
+
+li {list-style-type: none;} /* 글머리기호 초기화 */
+a {text-decoration: none; color: inherit;} /* a태그 밑줄 없애기, 폰트색상 부모값적용 */
+em, i, cite, address {font-style: normal;} /* italic 폰트라서 normal값 줘서 초기화 */
+table {border-collapse: collapse;} /* 칸칸을 합쳐줌 셀병합 */
+
+.blind {
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+    text-indent: -9999px; /* text 정보는 있지만 화면에서는 보이지 않게 함 */
+}
+
+.clear::before,
+.clear::after {
+    content: '';
+    display: block;
+    clear: both; /* clear 라는 클래스 앞,뒤로 플로트값적용x */
+}
+
+body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: rgba(0,0,0,0.8);
+}
+
+
+::-webkit-scrollbar {
+    width: 15px;
+    /* 스크롤바의 너비 */
+}
+
+/* 스크롤바의 트랙 (스크롤바가 이동하는 영역) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* 트랙의 배경색 */
+}
+
+/* 스크롤바 핸들 (스크롤바의 드래그 가능한 부분) */
+::-webkit-scrollbar-thumb {
+    background: #C9AB81;
+    /* 핸들의 배경색 */
+
+}
+
+/* scrollbar */
+
+div{ caret-color: transparent; /* 깜박이는 커서 숨기기 */}
+div, p, span{cursor:default;}
+input{caret-color:auto}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a *, button{cursor: pointer;}

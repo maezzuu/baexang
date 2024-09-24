@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAEXANG</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/icon" href="img/browser_icon.png">
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+
+
+<body>
+    <div id="wrap"> <!-- 신상품 -->
+        <header>
+            <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="로고"></a></h1>
+            <a href="#" class="btn"><img src="img/ico-header-menu.png" alt="카테고리"></a>
+
+            <div class="gnb_left">
+                <ul>
+                    <li><a href="sub01_best.html">베스트</a></li>
+                    <li><a href="sub02_new.html">신상품</a></li>
+                    <li><a href="sub03_paint.html">사진작품</a></li>
+                    <li><a href="sub04_art.html">그림작품</a></li>
+                    <li><a href="sub05_artist.html">작가별</a></li>
+                    <li><a href="sub06_genre.html">장르별</a></li>
+                    <li><a href="sub07_subject.html">주제별</a></li>
+                </ul>
+            </div>
+            <div class="gnb_right">
+                <ul>
+                    <li><a href="sub08_login.html">로그인</a></li>
+                    <li><a href="sub09_join.html">회원가입</a></li>
+                    <li><a href="sub08_login.html">주문조회</a></li>
+                    <li><a href="sub10_order.html">장바구니 <span>0</span></a></li>
+                    <li><a href="intro.html">회사소개</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <a href="#" title="search"><img src="img/ico-header-search.png" alt=""></a>
+            </div>
+            <div class="sear">
+                <div class="search_slide">
+                    <div class="full_search">
+                        <input type="search" placeholder="Search...">
+                        <div class="search_icon">
+                            <a href="#"><img src="img/ico-header-search-big.png" alt=""></a>
+                        </div>
+                        <div class="search_ke">
+                            <div class="search_left">
+                                <h2>최근검색어</h2>
+                                <ul class="search_name">
+                                    <li><a href="#">#클로드 모네<span>2022.03.14</span></a></li>
+                                    <li><a href="#">#빈센트 반 고흐<span>2022.03.14</span></a></li>
+                                    <li><a href="#">#정원의 여인들<span>2022.03.14</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="search_right">
+                                <h2>인기검색어</h2>
+                                <ul class="search_name">
+                                    <li><a href="#">#클로드 모네</a></li>
+                                    <li><a href="#">#정원의 여인들</a></li>
+                                    <li><a href="#">#빈센트 반 고흐</a></li>
+                                    <li><a href="#">#해바라기</a></li>
+                                    <li><a href="#">#폴 고갱</a></li>
+                                    <li><a href="#">#생 라자르 역</a></li>
+                                    <li><a href="#">#황색의 그리스도</a></li>
+                                    <li><a href="#">#파블로 피카소</a></li>
+                                    <li><a href="#">#아비뇽의 아가씨들</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn_close btn_search_close"><img src="img/ico-header-search-close.png"
+                            alt=""></a>
+                </div>
+            </div>
+        </header>
+        <aside class="btn_slide">
+            <h1 class="aside_logo"><img src="img/logo_white.png" alt="로고"></h1>
+            <ul class="dep1">
+                <li class="dep1_gnb"><a href="#">Product</a>
+                    <ul class="dep2">
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">신상품</a></li>
+                        <li><a href="#">사진작품</a></li>
+                        <li><a href="#">그림작품</a></li>
+                        <li><a href="#">작가별</a></li>
+                        <li><a href="#">장르별</a></li>
+                        <li><a href="#">주제별</a></li>
+                    </ul>
+                </li>
+                <li class="dep1_gnb"><a href="#">About Baexang</a>
+                    <ul class="dep2">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">갤러리</a></li>
+                    </ul>
+                </li>
+                <li class="dep1_gnb"><a href="#">Community</a>
+                    <ul class="dep2">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이벤트</a></li>
+        
+                    </ul>
+                </li>
+                <li class="dep1_gnb"><a href="#">Service</a>
+                    <ul class="dep2">
+                        <li><a href="#">제휴협찬문의</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">1:1문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="aside_foot">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">개인결제창</a></li>
+                </ul>
+            </div>
+            <a href="#" class="btn_close"><img src="img/ico-header-search-close-white.png" alt=""></a>
+        </aside>
+
+        <!-- header -->
+
+        <main>
+            <div id="cont_best">
+                <div class="title">
+                    <p>백상과 함께하는 새로운 작품을 소개합니다.</p>
+                    <h1>NEW ART</h1>
+                </div>
+                <div class="title2">
+                    <div class="title_text">
+                        <h2>New Art</h2>
+                        <p>총 <span>5</span>개의 상품이 있습니다.</p>
+                    </div>
+                </div>
+                <div class="cont01">
+                    <div class="best_list">
+                        <ul>
+                            <li> <!-- 베스트이미지1 -->
+                                <div class="new_best_img">
+                                    <div class="best_img_box">
+                                        <img src="img/new_art01.jpg" alt="">
+                                        <div class="best_imghover">
+                                            <a href="item.html" class="best_link">
+                                                <span>Read More</span>
+                                            </a>
+                                            <figure>
+                                                <button><img src="img/ico-sight.png" class="img01" alt=""></button>
+                                                <button onclick="bestClick()"><img src="img/ico-like.png" class="img02"
+                                                        alt=""></button>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="best_text">
+                                        <p class="main_title">아를의 랑그루아 다리</p>
+                                        <p class="sub_title">
+                                        <p class="artist_name">빈센트 반 고흐</p>
+                                        <p class="art_size">30.0cm x 30.0cm</p>
+                                        <p class="price">38,200<span>원</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li> <!-- 베스트이미지2 -->
+                                <div class="new_best_img">
+                                    <div class="best_img_box">
+                                        <img src="img/new_art02.jpg" alt="">
+                                        <div class="best_imghover">
+                                            <a href="item.html" class="best_link">
+                                                <span>Read More</span>
+                                            </a>
+                                            <figure>
+                                                <button><img src="img/ico-sight.png" class="img01" alt=""></button>
+                                                <button onclick="bestClick()"><img src="img/ico-like.png" class="img02"
+                                                        alt=""></button>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="best_text">
+                                        <p class="main_title">아를의 랑그루아 다리</p>
+                                        <p class="sub_title">
+                                        <p class="artist_name">빈센트 반 고흐</p>
+                                        <p class="art_size">30.0cm x 30.0cm</p>
+                                        <p class="price">38,200<span>원</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li> <!-- 베스트이미지3 -->
+                                <div class="new_best_img">
+                                    <div class="best_img_box">
+                                        <img src="img/new_art03.jpg" alt="">
+                                        <div class="best_imghover">
+                                            <a href="item.html" class="best_link">
+                                                <span>Read More</span>
+                                            </a>
+                                            <figure>
+                                                <button><img src="img/ico-sight.png" class="img01" alt=""></button>
+                                                <button onclick="bestClick()"><img src="img/ico-like.png" class="img02"
+                                                        alt=""></button>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="best_text">
+                                        <p class="main_title">아를의 랑그루아 다리</p>
+                                        <p class="sub_title">
+                                        <p class="artist_name">빈센트 반 고흐</p>
+                                        <p class="art_size">30.0cm x 30.0cm</p>
+                                        <p class="price">38,200<span>원</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li> <!-- 베스트이미지4 -->
+                                <div class="new_best_img">
+                                    <div class="best_img_box">
+                                        <img src="img/new_art04.png" alt="">
+                                        <div class="best_imghover">
+                                            <a href="item.html" class="best_link">
+                                                <span>Read More</span>
+                                            </a>
+                                            <figure>
+                                                <button><img src="img/ico-sight.png" class="img01" alt=""></button>
+                                                <button onclick="bestClick()"><img src="img/ico-like.png" class="img02"
+                                                        alt=""></button>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="best_text">
+                                        <p class="main_title">아를의 랑그루아 다리</p>
+                                        <p class="sub_title">
+                                        <p class="artist_name">빈센트 반 고흐</p>
+                                        <p class="art_size">30.0cm x 30.0cm</p>
+                                        <p class="price">38,200<span>원</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li> <!-- 베스트이미지5 -->
+                                <div class="new_best_img">
+                                    <div class="best_img_box">
+                                        <img src="img/new_art05.png" alt="">
+                                        <div class="best_imghover">
+                                            <a href="item.html" class="best_link">
+                                                <span>Read More</span>
+                                            </a>
+                                            <figure>
+                                                <button><img src="img/ico-sight.png" class="img01" alt=""></button>
+                                                <button onclick="bestClick()"><img src="img/ico-like.png" class="img02"
+                                                        alt=""></button>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="best_text">
+                                        <p class="main_title">아를의 랑그루아 다리</p>
+                                        <p class="sub_title">
+                                        <p class="artist_name">빈센트 반 고흐</p>
+                                        <p class="art_size">30.0cm x 30.0cm</p>
+                                        <p class="price">38,200<span>원</span></p>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer_top">
+                <p>개인정보처리방침</p>
+                <p>이용약관</p>
+                <p>회사소개</p>
+            </div>
+            <div class="footer_mid">
+                <p class="middle01">
+                    <span>대표자:권순상</span>
+                    <span>사업자 등록번호:137-81-30071</span>
+                </p>
+                <p class="middle02">
+                    <span>주소:경기도 고양시 일산동구 산황로 178-15</span>
+                    <span>EMAIL:gbaexang@gmail.com</span>
+                    <span>TEL:031-954-9541</span>
+                    <span>FAX:031-977-9540</span>
+                </p>
+                <p class="middle03">
+                    <span class="num1">BAEXANG</span>
+                    <span class="num2">GALLERY</span>
+                </p>
+            </div>
+            <div class="footer_bot">
+                Copyright © 2022 Baexang Gallery. All rights reserved.
+            </div>
+        </footer>
+        <div id="totop" class="iconbutton">▲</div>
+    </div>
+
+
+    <script>
+        $(function () {
+            $('.btn').on('click', function () {
+                $('.btn_slide').animate({ left: 0 }, 800);
+            });
+
+            $('.btn_close').on('click', function () {
+                $('.btn_slide').animate({ left: '-100%' }, 1400);
+            });
+
+            // 오른쪽 어사이드 검색창
+            $('.search').on('click', function () {
+                $('.search_slide').animate({ right: 0 }, 1200);
+            });
+
+            $('.btn_search_close').on('click', function () {
+                $('.search_slide').animate({ right: '-250%' }, 1200);
+            });
+
+            //오른쪽 어사이드 dep1에 마우스 hover시 dep2생성
+
+            let dep1Gnb = document.querySelector('.dep1_gnb');
+
+            dep1Gnb.addEventListener('mouseover', function () {
+                dep1Gnb.classList.add('on');
+            });
+
+            dep1Gnb.addEventListener('mouseleave', function () {
+                dep1Gnb.classList.remove('on');
+            });
+        });
+
+    </script>
+
+    <script src="js/baexang_art.js"></script>
+</body>
+
+</html>

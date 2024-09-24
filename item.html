@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAEXANG</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/icon" href="img/browser_icon.png">
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+
+
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="로고"></a></h1>
+            <a href="#" class="btn"><img src="img/ico-header-menu.png" alt="카테고리"></a>
+        
+            <div class="gnb_left">
+                <ul>
+                    <li><a href="sub01_best.html">베스트</a></li>
+                    <li><a href="sub02_new.html">신상품</a></li>
+                    <li><a href="sub03_paint.html">사진작품</a></li>
+                    <li><a href="sub04_art.html">그림작품</a></li>
+                    <li><a href="sub05_artist.html">작가별</a></li>
+                    <li><a href="sub06_genre.html">장르별</a></li>
+                    <li><a href="sub07_subject.html">주제별</a></li>
+                </ul>
+            </div>
+            <div class="gnb_right">
+                <ul>
+                    <li><a href="sub08_login.html">로그인</a></li>
+                    <li><a href="sub09_join.html">회원가입</a></li>
+                    <li><a href="sub08_login.html">주문조회</a></li>
+                    <li><a href="sub10_order.html">장바구니 <span>0</span></a></li>
+                    <li><a href="intro.html">회사소개</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <a href="#" title="search"><img src="img/ico-header-search.png" alt=""></a>
+            </div>
+            <div class="sear">
+                <div class="search_slide">
+                    <div class="full_search">
+                        <input type="search" placeholder="Search...">
+                        <div class="search_icon">
+                            <a href="#"><img src="img/ico-header-search-big.png" alt=""></a>
+                        </div>
+                        <div class="search_ke">
+                            <div class="search_left">
+                                <h2>최근검색어</h2>
+                                <ul class="search_name">
+                                    <li><a href="#">#클로드 모네<span>2022.03.14</span></a></li>
+                                    <li><a href="#">#빈센트 반 고흐<span>2022.03.14</span></a></li>
+                                    <li><a href="#">#정원의 여인들<span>2022.03.14</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="search_right">
+                                <h2>인기검색어</h2>
+                                <ul class="search_name">
+                                    <li><a href="#">#클로드 모네</a></li>
+                                    <li><a href="#">#정원의 여인들</a></li>
+                                    <li><a href="#">#빈센트 반 고흐</a></li>
+                                    <li><a href="#">#해바라기</a></li>
+                                    <li><a href="#">#폴 고갱</a></li>
+                                    <li><a href="#">#생 라자르 역</a></li>
+                                    <li><a href="#">#황색의 그리스도</a></li>
+                                    <li><a href="#">#파블로 피카소</a></li>
+                                    <li><a href="#">#아비뇽의 아가씨들</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn_close btn_search_close"><img src="img/ico-header-search-close.png" alt=""></a>
+                </div>
+            </div>
+        </header>
+        <aside class="btn_slide">
+            <h1 class="aside_logo"><img src="img/logo_white.png" alt="로고"></h1>
+            <ul class="dep1">
+                <li class="dep1_gnb"><a href="#">Product</a>
+                    <ul class="dep2">
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">신상품</a></li>
+                        <li><a href="#">사진작품</a></li>
+                        <li><a href="#">그림작품</a></li>
+                        <li><a href="#">작가별</a></li>
+                        <li><a href="#">장르별</a></li>
+                        <li><a href="#">주제별</a></li>
+                    </ul>
+                </li>
+                <li class="dep1_gnb"><a href="#">About Baexang</a>
+                    <ul class="dep2">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">갤러리</a></li>
+                    </ul>
+                </li>
+                <li class="dep1_gnb"><a href="#">Community</a>
+                    <ul class="dep2">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이벤트</a></li>
+        
+                    </ul>
+                </li>
+                <li class="dep1_gnb"><a href="#">Service</a>
+                    <ul class="dep2">
+                        <li><a href="#">제휴협찬문의</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">1:1문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="aside_foot">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">개인결제창</a></li>
+                </ul>
+            </div>
+            <a href="#" class="btn_close"><img src="img/ico-header-search-close-white.png" alt=""></a>
+        </aside>
+        
+        <!-- header -->
+        
+        <div id="sit_item">
+            <div class="item_img">
+                <span class="blind">액자사진 미리보기</span>
+            </div>
+            <div class="item_option">
+                <h1 class="item_title">베르농의 테라스</h1>
+                <p class="artist_name">피에르 보나르</p>
+                <div class="artist_scroll">
+                    <div class="artist_size">
+                        <h2>그림사이즈선택</h2>
+                        <span><strong>*</strong>캔버스/래핑캔버스는 짧은변 최대140cm</span>
+                        <div class="select">
+                            <div class="selected" id="selectedItem">
+                                <div class="selected-value">사이즈를 선택하세요.</div>
+                                <div class="arrow"></div>
+                            </div>
+                            <ul class="select_option">
+                                <li class="option">사이즈를 선택하세요.</li>
+                                <li class="option">30.0cm x 30.0cm</li>
+                                <li class="option">35.0cm X 35.0cm</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="artist_size media_choice">
+                        <h2>미디어 선택</h2>
+                        <ul class="artist_choice">
+                            <li class="on">
+                                <label class="checkbox_label">
+                                    <input type="checkbox">
+                                    <span class="checkbox_icon"></span>
+                                    <span class="blind">체크</span>
+                                </label>
+                            </li>
+                            <li><p>캔버스</p></li>
+                            <li class="on">
+                                <label class="checkbox_label">
+                                    <input type="checkbox">
+                                    <span class="checkbox_icon"></span>
+                                    <span class="blind">체크</span>
+                                </label>
+                            </li>
+                            <li><p>파일아트</p></li>
+                        </ul>
+                    </div>
+                    <div class="artist_size">
+                        <h2>프레임선택</h2>
+                        <span><strong>*</strong>스크롤 사용시 다양한 프레임을 확인하실 수 있습니다.</span>
+                        <ul class="artist_choice">
+                            <li class="on"><a href="#"><img src="img/artist/item-detail-step02-box-wood.jpg" alt=""></a>
+                            </li>
+                            <li><a href="#"><img src="img/artist/item-detail-step02-antique-d-sliver.jpg" alt=""></a>
+                            </li>
+                            <li><a href="#"><img src="img/artist/item-detail-step02-box-black.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="img/artist/item-detail-step02-box-white.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="img/artist/item-detail-step02-canvas-pannel.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="img/artist/item-detail-step02-float.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="img/artist/item-detail-step02-up-wood.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="img/artist/item-detail-step02-wood-beige.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="img/artist/item-detail-step02-wood-float.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="img/artist/item-detail-step02-wood-beige.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="artist_size frame_choice">
+                        <h2>매트(여백) 선택</h2>
+                        <ul class="artist_choice">
+                            <li class="on"><a href="#"><img src="img/artist/item-detail-step02-wrapping-canvas.jpg"
+                                        alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="art_buy">
+                    <div class="buy_box">
+                        <div class="buy_button">
+                            <p>아를의 랑그루아 다리</p>
+                            <div class="buy_btn_text">
+                                <button class="minusbtn" id="minusbtn">-</button>
+                                <input type="text" id="quantity" class="quantity" value="1" readonly>
+                                <button class="plusbtn" id="plusbtn">+</button>
+                            </div>
+                        </div>
+                        <div class="buy_price">
+                            <span class="total">총 금액</span>
+                            <span id="total"><strong>38,200</strong>원</span>
+                        </div>
+                        <div class="buy_btn">
+                            <a href="#">장바구니</a>
+                            <a href="#">구매하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sit_bg_priview">
+                <div class="bg_thumb_list">
+                    <div class="bg_thumb"><img src="img/artist/item-detail-frame-bg01.jpg" alt="Image 1"></div>
+                    <div class="bg_thumb"><img src="img/artist/item-detail-frame-bg02.jpg" alt="Image 2"></div>
+                    <div class="bg_thumb"><img src="img/artist/item-detail-frame-bg03.jpg" alt="Image 3"></div>
+                    <div class="bg_thumb"><img src="img/artist/item-detail-frame-bg04.jpg" alt="Image 4"></div>
+                    <div class="bg_thumb"><img src="img/artist/item-detail-frame-bg05.jpg" alt="Image 5"></div>
+                </div>
+            </div>
+        </div>
+        <div class="art_content">
+            <h2>아티스트 다른 그림</h2>
+            <div class="swiper best_img content_img">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> <!-- 베스트이미지1 -->
+                        <div class="new_best_img">
+                            <div class="best_img_box">
+                                <img src="img/best_art01.jpg" alt="">
+                                <div class="best_imghover">
+                                    <a href="" class="best_link">
+                                        <span>Read More</span>
+                                    </a>
+                                    <figure>
+                                        <button><img src="img/ico-sight.png" class="img01" alt=""></button>
+                                        <button onclick="bestClick()"><img src="img/ico-like.png" class="img02"
+                                                alt=""></button>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="best_text">
+                                <p class="main_title">아를의 랑그루아 다리</p>
+                                <p class="sub_title">
+                                <p class="artist_name">빈센트 반 고흐</p>
+                                <p class="art_size">30.0cm x 30.0cm</p>
+                                <p class="price">38,200<span>원</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide"> <!-- 베스트이미지2 -->
+                        <div class="new_best_img">
+                            <div class="best_img_box">
+                                <img src="img/best_art02.jpg" alt="">
+                                <div class="best_imghover">
+                                    <a href="" class="best_link">
+                                        <span>Read More</span>
+                                    </a>
+                                    <figure>
+                                        <button><img src="img/ico-sight.png" class="img01" alt=""></button>
+                                        <button onclick="bestClick()"><img src="img/ico-like.png" class="img02"
+                                                alt=""></button>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="best_text">
+                                <p class="main_title">키스</p>
+                                <p class="sub_title">
+                                <p class="artist_name">구스타프 클림트</p>
+                                <p class="art_size">30.0cm x 30.0cm</p>
+                                <p class="price">36,500<span>원</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide"> <!-- 베스트이미지3 -->
+                        <div class="new_best_img">
+                            <div class="best_img_box">
+                                <img src="img/best_art03.png" alt="">
+                                <div class="best_imghover">
+                                    <a href="" class="best_link">
+                                        <span>Read More</span>
+                                    </a>
+                                    <figure>
+                                        <button><img src="img/ico-sight.png" class="img01" alt=""></button>
+                                        <button onclick="bestClick()"><img src="img/ico-like.png" class="img02"
+                                                alt=""></button>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="best_text">
+                                <p class="main_title">앙티브의 아침</p>
+                                <p class="sub_title">
+                                <p class="artist_name">클로드 모네</p>
+                                <p class="art_size">30.0cm x 30.0cm</p>
+                                <p class="price">35,700<span>원</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide"> <!-- 베스트이미지4 -->
+                        <div class="new_best_img">
+                            <div class="best_img_box">
+                                <img src="img/best_art04.png" alt="">
+                                <div class="best_imghover">
+                                    <a href="" class="best_link">
+                                        <span>Read More</span>
+                                    </a>
+                                    <figure>
+                                        <button><img src="img/ico-sight.png" class="img01" alt=""></button>
+                                        <button onclick="bestClick()"><img src="img/ico-like.png" class="img02"
+                                                alt=""></button>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="best_text">
+                                <p class="main_title">아티제 호수</p>
+                                <p class="sub_title">
+                                <p class="artist_name">구스타프 클림트</p>
+                                <p class="art_size">30.0cm x 30.0cm</p>
+                                <p class="price">42,400<span>원</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide"> <!-- 베스트이미지5 -->
+                        <div class="new_best_img">
+                            <div class="best_img_box">
+                                <img src="img/best_art05.png" alt="">
+                                <div class="best_imghover">
+                                    <a href="#" class="best_link">
+                                        <span>Read More</span>
+                                    </a>
+                                    <figure>
+                                        <button><img src="img/ico-sight.png" class="img01" alt=""></button>
+                                        <button onclick="bestClick()"><img src="img/ico-like.png" class="img02"
+                                                alt=""></button>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="best_text">
+                                <p class="main_title">지베르니 봄의 효과</p>
+                                <p class="sub_title">
+                                <p class="artist_name">클로드 모네</p>
+                                <p class="art_size">30.0cm x 30.0cm</p>
+                                <p class="price">36,500<span>원</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="art_tab">
+            <ul>
+                <li class="on"><a href="#">상품정보</a></li>
+                <li><a href="#">구매정보</a></li>
+                <li><a href="#">상품후기</a></li>
+                <li><a href="#">상품문의</a></li>
+            </ul>
+        </div>
+        <div class="art_intro01">
+            <div class="title">
+                <p>빈센트 반 고흐</p>
+                <h1>아를의 랑그루아 다리</h1>
+            </div>
+            <div class="art_intro_img">
+                <img src="img/best_art01.jpg" alt="">
+                <div class="art_intro_text">
+                    <strong>아를의 랑그루아 다리</strong>
+                    <span>Vincent van Gogh</span>
+                    <span>빈센트 반 고흐</span>
+                    <p>빈센트 반 고흐가 1여년 동안 아를에 머무르면서 많은 작품들을 그렸는데 이 곳에서 그렸던 그의 대표작으로 '아를의 랑그루아 다리'와 '아를의 다리와 빨래하는 여인들'을 들 수
+                        있다. </p>
+                    <p><br></p>
+                    <p>도심 남쪽편 평야지대를 가로지르는 운하에 놓여진 목재로 만든 작은 개폐교로 그의 고향 네덜란드에서 흔히 볼 수 있는 다리이다.</p>
+                    <p>아마도 파리에서의 생활에서 벗어나 아를에서 본 이런 운하와 개폐교가 그에게 향수와 희망을 불러 일으킨 것으로 보인다.</p>
+                    <p>지금도 아를의 다리는 그의 그림과 함께 관광명소 남아 있어 많은 사람들을 이곳으로 불러 들이게 하고 있다.&nbsp;</p>
+                    <p>실제로 본 아를의 다리는 고흐의 작품에서 보이는 노란색의 이미지는 없고 다리와 운하를 배경으로 한 푸른 프로방스 지방의 하늘이 인상적인 곳이었다.</p>
+                    <p>&nbsp;아마도 그의 눈에 비친 느낌을 색으로 표현한 것으로 보인다.
+                        고갱이 고흐와 함께 아를에 머문 시간은 고작 9주 밖에 되지 않는다.</p>
+                    <p>겨울 석 달 동안 함께 작업을 한 셈인데, 고갱도 이때 고흐와 마찬가지로 고통스러운 마음 상태에 있었다.&nbsp;</p>
+                    <p><br></p>
+                    <p>그러나 결과적으로 파탄으로 끝나버린 이 짧은 ‘동거’를 기다리는 그 순간은 고흐에게 생애 최고의 상태였다고 할 수 있다. 고흐는 마치 신혼살림을 준비하는 신부처럼 들떠
+                        있었다.&nbsp;</p>
+                </div>
+            </div>
+        </div>
+        <div class="artist_intro">
+            <div class="intro_left">
+                <figure>
+                    <img src="img/sub04/artist_01.jpg" alt="">
+                </figure>
+            </div>
+            <div class="intro_right">
+                <h2 class="name">라울 뒤피</h2>
+                <span>Raoul Dufy</span>
+                <dl class="sum">
+                    <dt>국적</dt>
+                    <dd>프랑스</dd>
+                </dl>
+                <dl class="sum">
+                    <dt>출생.사망</dt>
+                    <dd>1877년 ~ 1953년</dd>
+                </dl>
+                <dl class="sum">
+                    <dt>주요작품</dt>
+                    <dd>카지노의 태양</dd>
+                </dl>
+                <p>
+                    라울 뒤피(Raoul Dufy, 1877년 6월 3일 ~ 1953년 3월 23일)는 프랑스의 화가이다. 직물, 도자기 디자이너 사이에서 유행한 다채롭고 장식적인 스타일을
+                    발전시켰다.<br><br>
+                    1877년 르 아브르에서 태어난 뒤피는 23세에 파리로 나와 오로지 인상파의 드가를 생각하게 하는 그림을 약간 어두운 색조로 그렸다. 라울 뒤피가 자기의 묘화 과제에 대하여 스스로
+                    계발(啓發)된 계기는 마티스의 작품 《호사·정밀·쾌락》을 접한 때라고 한다. 그는 이렇게 말하고 있다. "이 그림을 보고 나는 그린다고 하는 참다운 의미를 파악할 수 있었다. 정말
+                    놀라운 발명이라 할 이 그림을 바라보고 있으면 인상주의적인 리얼리즘의 매력은 흔적도 없이 날아가 버린다."
+                </p>
+            </div>
+        </div>
+        <div class="art_img">
+            <figure>
+                <img src="img/item-detail-contents.jpg" alt="">
+            </figure>
+        </div>
+        <div class="art_tab">
+            <ul>
+                <li><a href="#">상품정보</a></li>
+                <li class="on"><a href="#">구매정보</a></li>
+                <li><a href="#">상품후기</a></li>
+                <li><a href="#">상품문의</a></li>
+            </ul>
+        </div>
+        <div class="art_note">
+            <div class="title">
+                <p>Purchase Notes</p>
+                <h1>구매시 주의 사항</h1>
+            </div>
+            <div class="note_box1">
+                <span>1</span><strong>사이즈 오차</strong>
+                <p>백상갤러리 그림액자는 수제작 상품 특성상 제조 과정에서 크기에 따라 1~3cm 사이즈 오차가 발생할 수 있으며 이는 상품 고유의 하자가 아닙니다. 동일 사이즈의 상품을 나란히
+                    거치하시려는 경우 등 정밀 사이즈 제작이 필요하신 경우는 구매시 배송메세지, 1:1 상담게시판에 요청사항을 남겨주시거나 고객센터로 연락주세요.</p>
+            </div>
+            <div class="note_box2">
+                <span>2</span><strong>색감차이</strong>
+                <p>화면에서 보는 상품기술서 상의 색감과 실제 상품의 색감은 모니터와 미디어라는 매체의 특성, 사용자 기기의 고유 특성에 따라 차이가 날 수 있으며 이는 상품의 하자가 아닙니다. 동일한
+                    색상이라도 사람에 따라서 느끼는 색의 차이가 존재하며 계절, 관람공간의 색상 및 조명 등 수많은 요소에 따라 다르게 보일 수 있기 때문에 색감, 느낌 등의 사유로 인한 A/S 및
+                    교환/반품이 불가한 점 양해 부탁드립니다.</p>
+            </div>
+            <div class="note_box1">
+                <span>3</span><strong>배송정책</strong>
+                <p>백상갤러리 명화액자는 각 그림별 비율을 지키기 위한 개별 주문 수제작 상품으로 공장 상황에 따라 주문일로 부터 출고까지 영업일 기준 5일내외 (마띠에르 리터치 상품은 영업일
+                    20일이내 소요)의 제작기간이 소요됩니다. 넉넉하게 여유를 가지고 주문해 주시기 바랍니다.<br>
+                    * 주말 및 휴무일, 천재지변에 의한 기간은 배송기한에 포함되지 않습니다.</p>
+            </div>
+            <div class="note_box2">
+                <span>4</span><strong>배송비</strong>
+                <p>화면에서 보는 상품기술서 상의 색감과 실제 상품의 색감은 모니터와 미디어라는 매체의 특성, 사용자 기기의 고유 특성에 따라 차이가 날 수 있으며 이는 상품의 하자가 아닙니다. 동일한
+                    색상이라도 사람에 따라서 느끼는 색의 차이가 존재하며 계절, 관람공간의 색상 및 조명 등 수많은 요소에 따라 다르게 보일 수 있기 때문에 색감, 느낌 등의 사유로 인한 A/S 및
+                    교환/반품이 불가한 점 양해 부탁드립니다.</p>
+            </div>
+            <div class="note_box1">
+                <span>5</span><strong>보증 및 A/S</strong>
+                <p>화면에서 보는 상품기술서 상의 색감과 실제 상품의 색감은 모니터와 미디어라는 매체의 특성, 사용자 기기의 고유 특성에 따라 차이가 날 수 있으며 이는 상품의 하자가 아닙니다. 동일한
+                    색상이라도 사람에 따라서 느끼는 색의 차이가 존재하며 계절, 관람공간의 색상 및 조명 등 수많은 요소에 따라 다르게 보일 수 있기 때문에 색감, 느낌 등의 사유로 인한 A/S 및
+                    교환/반품이 불가한 점 양해 부탁드립니다.</p>
+            </div>
+        </div>
+        <div class="art_exchange">
+            <div class="title">
+                <p>Exchange / Refund</p>
+                <h1>교환 / 환불</h1>
+            </div>
+            <div class="note_box1">
+                <span>1</span><strong>교환 환불정책</strong>
+                <p>백상갤러리의 그림액자는 그림, 미디어, 크기, 프레임 등을 고객이 지정하여 제작하는 주문제작 상품으로 제품 특성상 소비자의 변심에 의한 상품교환 또는 환불이 불가합니다. 신중하게
+                    구매해 주시기 바랍니다. 아크릴 압착 상품이 오배송 된 경우 보호필름을 제거하시면 상품성 상실로 반송 처리가 불가합니다. 오배송을 확인하시면 절대로 보호필름을 제거하지 마시고,
+                    배송된 포장재에 그대로 재 포장하여 고객센터로 수거를 요청 해 주세요.</p>
+            </div>
+            <div class="note_box2">
+                <span>2</span><strong>색감차이</strong>
+                <p>상품하자, 오배송의 경우 상품을 받으신 날로부터 7일 이내(신청일 기준) 교환 환불이 가능합니다. 배송중 파손 또는 상품 초기 불량의 경우 수거 후 AS처리 되거나, 액자류 특성상
+                    수거 없이 재제작 배송 될 수 있습니다. 상품하자, 오배송에 따른 임의 반송 시 액자류 특성상 상품이 파손되기 쉬으므로 반드시 받으신 포장을 활용하여 재포장 해 주시고 고객센터로
+                    수거를 요청 해 주세요.</p>
+            </div>
+            <div class="note_box1">
+                <span>3</span><strong>배송정책</strong>
+                <p>주문제작상품 특성상 주문이 접수 이후 제작이 시작되면 배송 이전이라도 주문취소에 따른 전액 환불이 불가합니다. 반드시 주문을 취소하셔야 하는 경우, 인쇄공정 진행시 상품금액의
+                    30%, 프레임 공정 진행시 상품금액의 70%를 차감한 나머지 금액을 환불 받으실 수 있습니다.</p>
+            </div>
+            <div class="note_box2">
+                <span>4</span><strong>배송비</strong>
+                <p>상품의 하자로 인한 반품, A/S등을 위해 반송이 필요한 경우 반드시 고객센터에 문의/요청 해주세요. 임의 반송시 상품이 파손/훼손되기 쉬우며, 이경우 고객과실로 반품, A/S등의
+                    조치를
+                    받기 어려울 수 있습니다.<br>
+                    * 반송주소 : 서울 강남구 강남대로 1234 (백상갤러리)</p>
+            </div>
+        </div>
+        <div class="art_tab">
+            <ul>
+                <li><a href="#">상품정보</a></li>
+                <li><a href="#">구매정보</a></li>
+                <li class="on"><a href="#">상품후기</a></li>
+                <li><a href="#">상품문의</a></li>
+            </ul>
+        </div>
+        <div class="art_grade">
+            <div class="grade_left">
+                <img src="img/s_star_total.png" alt="">
+                <strong>4.8</strong>
+                <p><strong>100%</strong>의 구매자들이 이 상품을 좋아합니다</p>
+            </div>
+            <div class="grade_right">
+                <div class="star5">
+                    <img src="img/s_star5_big.png" alt="">
+                    <span class="grade_text">아주 좋아요</span>
+                    <div class="grade_graph">
+                        <div class="grade_bar"></div>
+                    </div>
+                    <span class="grade_score">98%</span>
+                </div>
+
+                <div class="star4">
+                    <img src="img/s_star4_big.png" alt="">
+                    <span class="grade_text">맘에 들어요</span>
+                    <div class="grade_graph">
+                        <div class="grade_bar"></div>
+                    </div>
+                    <span class="grade_score">100%</span>
+                </div>
+
+                <div class="star3">
+                    <img src="img/s_star3_big.png" alt="">
+                    <span class="grade_text">보통이예요</span>
+                    <div class="grade_graph">
+                        <div class="grade_bar"></div>
+                    </div>
+                    <span class="grade_score">0%</span>
+                </div>
+
+                <div class="star2">
+                    <img src="img/s_star2_big.png" alt="">
+                    <span class="grade_text">그냥 그래요</span>
+                    <div class="grade_graph">
+                        <div class="grade_bar"></div>
+                    </div>
+                    <span class="grade_score">0%</span>
+                </div>
+
+                <div class="star1">
+                    <img src="img/s_star1_big.png" alt="">
+                    <span class="grade_text">별로에요</span>
+                    <div class="grade_graph">
+                        <div class="grade_bar"></div>
+                    </div>
+                    <span class="grade_score">0%</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="art_review">
+            <div class="review_flex">
+                <div class="review_left">
+                    <h3 class="art_subtitle">Review</h3>
+                </div>
+                <div class="review_right">
+                    <ul>
+                        <li><a href="#">최신순</a></li>
+                        <li><a href="#">평점높은순</a></li>
+                        <li><a href="#">평점낮은순</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="user_review">
+                <img src="img/ico-information-big.png" alt="">
+                <p>사용후기가 없습니다.</p>
+            </div>
+            <div class="review_write">
+                <a href="#">
+                    사용후기 쓰기
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+        <div class="art_tab">
+            <ul>
+                <li><a href="#">상품정보</a></li>
+                <li><a href="#">구매정보</a></li>
+                <li><a href="#">상품후기</a></li>
+                <li class="on"><a href="#">상품문의</a></li>
+            </ul>
+        </div>
+        <div class="qna">
+            <div class="qna_flex review_flex">
+                <div class="qna_left">
+                    <h3 class="art_subtitle">QnA</h3>
+                    <p>상품문의를 제외한 반품,교환,취소 등에 관한 문의는 <span>고객센터 1:1문의 게시판</span>을 이용해주시기 바랍니다.</p>
+                </div>
+                <div class="qna_right">
+                    <div class="review_write">
+                        <a href="#">
+                            문의하기
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="user_review">
+                <img src="img/ico-information-big.png" alt="">
+                <p>사용후기가 없습니다.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_top">
+            <p>개인정보처리방침</p>
+            <p>이용약관</p>
+            <p>회사소개</p>
+        </div>
+        <div class="footer_mid">
+            <p class="middle01">
+                <span>대표자:권순상</span>
+                <span>사업자 등록번호:137-81-30071</span>
+            </p>
+            <p class="middle02">
+                <span>주소:경기도 고양시 일산동구 산황로 178-15</span>
+                <span>EMAIL:gbaexang@gmail.com</span>
+                <span>TEL:031-954-9541</span>
+                <span>FAX:031-977-9540</span>
+            </p>
+            <p class="middle03">
+                <span class="num1">BAEXANG</span>
+                <span class="num2">GALLERY</span>
+            </p>
+        </div>
+        <div class="footer_bot">
+            Copyright © 2022 Baexang Gallery. All rights reserved.
+        </div>
+    </footer>
+    <div id="totop" class="iconbutton">▲</div>
+
+    <script>
+        $(function () {
+        $('.btn').on('click', function () {
+            $('.btn_slide').animate({ left: 0 }, 800);
+        });
+    
+        $('.btn_close').on('click', function () {
+            $('.btn_slide').animate({ left: '-100%' }, 1400);
+        });
+    
+        // 오른쪽 어사이드 검색창
+        $('.search').on('click', function () {
+            $('.search_slide').animate({ right: 0 }, 1200);
+        });
+    
+        $('.btn_search_close').on('click', function () {
+            $('.search_slide').animate({ right: '-250%' }, 1200);
+        });
+    
+        //오른쪽 어사이드 dep1에 마우스 hover시 dep2생성
+        
+        let dep1Gnb = document.querySelector('.dep1_gnb');
+        
+        dep1Gnb.addEventListener('mouseover', function() {
+            dep1Gnb.classList.add('on');
+        });
+    
+        dep1Gnb.addEventListener('mouseleave', function() {
+            dep1Gnb.classList.remove('on');
+        });
+    });
+    
+    </script>
+    
+    <script src="js/baexang_art.js"></script>
+    <script src="js/baexangBuy.js"></script>
+    <script src="js/baexang_select.js"></script>
+</body>
+
+</html>
