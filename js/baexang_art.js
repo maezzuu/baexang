@@ -1,9 +1,3 @@
-$(document).ready(function () {
-    $("#header").load("include/header.html");
-    $("#footer").load("include/footer.html");
-});
-
-
 // 베스트 슬라이드 스와이퍼
 var swiperBestImg = new Swiper(".best_img", {
     slidesPerView: 4,

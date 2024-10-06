@@ -1,8 +1,3 @@
-$(document).ready(function () {
-    $("#header").load("include/header.html");
-    $("#footer").load("include/footer.html");
-});
-
 //sub09_02 아이디 공란 입력창/중복확인버튼클릭시
 let inputId = document.querySelector('#userInputId')
 let inputIdBtn = document.querySelector('.join_btn > a')

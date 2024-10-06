@@ -22,7 +22,6 @@ header {
     margin: 0 auto;
     position: relative;
     height: 80px;
-
 }
 
 header .logo {
@@ -199,16 +198,17 @@ aside .dep1 li a:hover {
     top: 20px;
     left: -100%;
     width: 100px;
+    height: auto;
     font-family: "Pretendard Variable";
     font-size: 18px;
     font-weight: 500;
     line-height: 40px;
-    transition: 0.8s;
+    z-index: 1000; 
 }
 
 .dep1_gnb:hover .dep2,
 .dep1_gnb.on .dep2 {
-    left: 55%;
+    left: 65%;
 }
 
 .dep2 li a:hover {
@@ -2914,4 +2914,55 @@ caption {
     height: 20px;
     text-align: center;
     line-height: 50px;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: rgba(182, 136, 51, 0.545);
+    color: white;
+    border-radius: 50%;
+    padding: 180px 0;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    line-height: 30px;
+    animation: wiggle 10s ease-in-out infinite;
+}
+.modal-content strong {
+    font-size: 24px;
+    font-family: "Noto Serif KR", serif;
+}
+@keyframes wiggle {
+    0% {
+        border-radius: 50% 44% 39% 47%;
+    }
+    25% {
+        border-radius: 60% 77% 49% 66%;
+    }
+    50% {
+        border-radius: 40% 60% 50% 55%;
+    }
+    75% {
+        border-radius: 60% 55% 70% 45%;
+    }
+    100% {
+        border-radius: 50% 44% 39% 47%;
+    }
+}
+#modalBtn {
+    margin-top: 10px;
+    padding: 5px 20px;
+    border-radius: 20px;
 }

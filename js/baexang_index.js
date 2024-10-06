@@ -33,3 +33,13 @@ $(function () {
         }
 };
 })
+
+window.onload = function() {
+    const modal = document.getElementById('modal');
+    const modalBtn = document.getElementById('modalBtn');
+
+    // 모달창 닫기 버튼 클릭 시 모달창 숨기기
+    modalBtn.onclick = function() {
+        modal.style.display = 'none';
+    };
+};
