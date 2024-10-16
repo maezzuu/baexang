@@ -16,6 +16,10 @@
     margin: 0 auto;
 }
 
+body {
+    width: 1920px;
+    overflow-x: hidden;
+}
 /* header 헤더 */
 header {
     width: 1870px;
