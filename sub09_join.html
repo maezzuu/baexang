@@ -21,10 +21,12 @@
 
 <body>
     <div id="wrap">
+
+        <!-- header -->
         <header>
             <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="로고"></a></h1>
             <a href="#" class="btn"><img src="img/ico-header-menu.png" alt="카테고리"></a>
-        
+
             <div class="gnb_left">
                 <ul>
                     <li><a href="sub01_best.html">베스트</a></li>
@@ -80,10 +82,14 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="btn_close btn_search_close"><img src="img/ico-header-search-close.png" alt=""></a>
+                    <a href="#" class="btn_close btn_search_close"><img src="img/ico-header-search-close.png"
+                            alt=""></a>
                 </div>
             </div>
         </header>
+        <!-- header -->
+
+        <!-- 네비게이션바 메뉴 아이콘 클릭시 -->
         <aside class="btn_slide">
             <h1 class="aside_logo"><img src="img/logo_white.png" alt="로고"></h1>
             <ul class="dep1">
@@ -108,7 +114,7 @@
                     <ul class="dep2">
                         <li><a href="#">공지사항</a></li>
                         <li><a href="#">이벤트</a></li>
-        
+
                     </ul>
                 </li>
                 <li class="dep1_gnb"><a href="#">Service</a>
@@ -128,9 +134,9 @@
             </div>
             <a href="#" class="btn_close"><img src="img/ico-header-search-close-white.png" alt=""></a>
         </aside>
-        
-        <!-- header -->
+        <!-- 네비게이션바 메뉴 아이콘 클릭시 -->
 
+        <!-- main -->
         <main>
             <div id="cont_best">
                 <div class="title">
@@ -145,6 +151,9 @@
                 <a href="sub09_join01.html">회원가입</a>
             </div>
         </main>
+        <!-- main -->
+
+        <!-- footer -->
         <footer>
             <div class="footer_top">
                 <p>개인정보처리방침</p>
@@ -171,42 +180,47 @@
                 Copyright © 2022 Baexang Gallery. All rights reserved.
             </div>
         </footer>
+        <!-- footer -->
+
+        <!-- scroll -->
         <div id="totop" class="iconbutton">▲</div>
+        <!-- scroll -->
+
     </div>
     <script>
         $(function () {
-        $('.btn').on('click', function () {
-            $('.btn_slide').animate({ left: 0 }, 800);
+            $('.btn').on('click', function () {
+                $('.btn_slide').animate({ left: 0 }, 800);
+            });
+
+            $('.btn_close').on('click', function () {
+                $('.btn_slide').animate({ left: '-100%' }, 1400);
+            });
+
+            // 오른쪽 어사이드 검색창
+            $('.search').on('click', function () {
+                $('.search_slide').animate({ right: 0 }, 1200);
+            });
+
+            $('.btn_search_close').on('click', function () {
+                $('.search_slide').animate({ right: '-250%' }, 1200);
+            });
+
+            //오른쪽 어사이드 dep1에 마우스 hover시 dep2생성
+
+            let dep1Gnb = document.querySelector('.dep1_gnb');
+
+            dep1Gnb.addEventListener('mouseover', function () {
+                dep1Gnb.classList.add('on');
+            });
+
+            dep1Gnb.addEventListener('mouseleave', function () {
+                dep1Gnb.classList.remove('on');
+            });
         });
-    
-        $('.btn_close').on('click', function () {
-            $('.btn_slide').animate({ left: '-100%' }, 1400);
-        });
-    
-        // 오른쪽 어사이드 검색창
-        $('.search').on('click', function () {
-            $('.search_slide').animate({ right: 0 }, 1200);
-        });
-    
-        $('.btn_search_close').on('click', function () {
-            $('.search_slide').animate({ right: '-250%' }, 1200);
-        });
-    
-        //오른쪽 어사이드 dep1에 마우스 hover시 dep2생성
-        
-        let dep1Gnb = document.querySelector('.dep1_gnb');
-        
-        dep1Gnb.addEventListener('mouseover', function() {
-            dep1Gnb.classList.add('on');
-        });
-    
-        dep1Gnb.addEventListener('mouseleave', function() {
-            dep1Gnb.classList.remove('on');
-        });
-    });
-    
+
     </script>
-    
+
     <script src="js/baexang_art.js"></script>
 
 </body>
