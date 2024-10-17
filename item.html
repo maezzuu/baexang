@@ -21,6 +21,7 @@
 
 <body>
     <div id="wrap">
+        <!-- header -->
         <header>
             <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="로고"></a></h1>
             <a href="#" class="btn"><img src="img/ico-header-menu.png" alt="카테고리"></a>
@@ -84,6 +85,9 @@
                 </div>
             </div>
         </header>
+        <!-- header -->
+
+        <!-- 네비게이션 좌측 메뉴버튼 클릭시 -->
         <aside class="btn_slide">
             <h1 class="aside_logo"><img src="img/logo_white.png" alt="로고"></h1>
             <ul class="dep1">
@@ -128,9 +132,9 @@
             </div>
             <a href="#" class="btn_close"><img src="img/ico-header-search-close-white.png" alt=""></a>
         </aside>
+        <!-- 네비게이션 좌측 메뉴버튼 클릭시 -->
         
-        <!-- header -->
-        
+        <!-- item -->
         <div id="sit_item">
             <div class="item_img">
                 <span class="blind">액자사진 미리보기</span>
@@ -232,6 +236,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- art -->
         <div class="art_content">
             <h2>아티스트 다른 그림</h2>
             <div class="swiper best_img content_img">
@@ -365,15 +371,17 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
+
+        <!-- arttab -->
         <div class="art_tab">
             <ul>
-                <li class="on"><a href="#">상품정보</a></li>
-                <li><a href="#">구매정보</a></li>
-                <li><a href="#">상품후기</a></li>
-                <li><a href="#">상품문의</a></li>
+                <li><a href="#art_intro01">상품정보</a></li>
+                <li><a href="#art_note">구매정보</a></li>
+                <li><a href="#art_review">상품후기</a></li>
+                <li><a href="#qna">상품문의</a></li>
             </ul>
         </div>
-        <div class="art_intro01">
+        <div class="art_intro01" id="art_intro01">
             <div class="title">
                 <p>빈센트 반 고흐</p>
                 <h1>아를의 랑그루아 다리</h1>
@@ -437,13 +445,13 @@
         </div>
         <div class="art_tab">
             <ul>
-                <li><a href="#">상품정보</a></li>
-                <li class="on"><a href="#">구매정보</a></li>
-                <li><a href="#">상품후기</a></li>
-                <li><a href="#">상품문의</a></li>
+                <li><a href="#art_intro01">상품정보</a></li>
+                <li><a href="#art_note">구매정보</a></li>
+                <li><a href="#art_review">상품후기</a></li>
+                <li><a href="#qna">상품문의</a></li>
             </ul>
         </div>
-        <div class="art_note">
+        <div class="art_note" id="art_note">
             <div class="title">
                 <p>Purchase Notes</p>
                 <h1>구매시 주의 사항</h1>
@@ -510,10 +518,10 @@
         </div>
         <div class="art_tab">
             <ul>
-                <li><a href="#">상품정보</a></li>
-                <li><a href="#">구매정보</a></li>
-                <li class="on"><a href="#">상품후기</a></li>
-                <li><a href="#">상품문의</a></li>
+                <li><a href="#art_intro01">상품정보</a></li>
+                <li><a href="#art_note">구매정보</a></li>
+                <li><a href="#art_review">상품후기</a></li>
+                <li><a href="#qna">상품문의</a></li>
             </ul>
         </div>
         <div class="art_grade">
@@ -570,7 +578,7 @@
 
             </div>
         </div>
-        <div class="art_review">
+        <div class="art_review" id="art_review">
             <div class="review_flex">
                 <div class="review_left">
                     <h3 class="art_subtitle">Review</h3>
@@ -599,13 +607,13 @@
         </div>
         <div class="art_tab">
             <ul>
-                <li><a href="#">상품정보</a></li>
-                <li><a href="#">구매정보</a></li>
-                <li><a href="#">상품후기</a></li>
-                <li class="on"><a href="#">상품문의</a></li>
+                <li><a href="#art_intro01">상품정보</a></li>
+                <li><a href="#art_note">구매정보</a></li>
+                <li><a href="#art_review">상품후기</a></li>
+                <li><a href="#qna">상품문의</a></li>
             </ul>
         </div>
-        <div class="qna">
+        <div class="qna" id="qna">
             <div class="qna_flex review_flex">
                 <div class="qna_left">
                     <h3 class="art_subtitle">QnA</h3>
