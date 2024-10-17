@@ -39,7 +39,7 @@ header .logo {
     text-align: center;
 }
 
-/* gnb_left 로고기준 왼쪽 gnb*/
+/* 네비게이션바 메뉴 아이콘 클릭시 */
 
 .gnb_left {
     position: absolute;
@@ -59,7 +59,7 @@ header .logo {
     font-weight: 600;
 }
 
-/* gnb_right 로고기준 오른쪽 gnb */
+/* 네비게이션바 검색 아이콘 클릭시 */
 
 .gnb_right {
     position: absolute;
@@ -91,7 +91,7 @@ header .logo {
     transform: translateY(-50%);
 }
 
-/* aisdebtn 어사이드아이콘 */
+/* aisdebtn 메뉴 어사이드 아이콘 */
 .btn {
     position: absolute;
     top: 32px;
